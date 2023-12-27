@@ -21,7 +21,7 @@ export default function About() {
       });
   };
   return (
-    <div className="mx-60 flex flex-col justify-center h-100 mb-16 ">
+    <div className="relative bottom-10 mx-80 flex flex-col justify-center h-100 mb-16 ">
       <h1 className="relative right-1 text-6xl text-center py-16 ">About Me</h1>
       <div className="flex justify-center">
         <div className="grid grid-cols-3 gap-y-[50px] gap-x-16">
@@ -61,7 +61,7 @@ export default function About() {
             </span>
           </div>
           <div className="flex items-center gap-5">
-          <CiMail className="cursor-pointer" size="60" onClick={() => copyToClipboard('googija9818@gmail.com')} />
+          <CiMail size="60" className="cursor-pointer"  onClick={() => copyToClipboard('googija9818@gmail.com')} />
             <span>
               <p className="text-2xl font-bold">이메일</p>
               <p className="text-xl">googija9818@gmail.com</p>
@@ -75,11 +75,11 @@ export default function About() {
       <div className="flex justify-center items-center pt-10"><img src={githublogo} className="w-40" />
       <span className="flex flex-col">
        <p className="text-2xl font-bold"> Github 주소</p> 
-      <a href="https://github.com/kkk1k" className="text-3xl pt-2 hover:text-blue-500">https://github.com/kkk1k</a>
+      <a href="https://github.com/kkk1k" className="text-3xl pt-2 transition ease-in-out duration-300 hover:text-blue-500">https://github.com/kkk1k</a>
       </span>
       
             </div>
-      <h1 className="relative text-3xl text-center my-10 mx-96 p-5 bg-orange-200 rounded-md">연락처와 이메일 버튼을 누르면 복사됩니다.</h1>
+      <h1 className="relative text-2xl text-center my-10 mx-80 p-5 bg-orange-200 rounded-md">연락처와 이메일 버튼을 누르면 복사됩니다.</h1>
     </div>
   );
 }
