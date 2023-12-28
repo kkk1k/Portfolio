@@ -1,11 +1,11 @@
-import React from "react";
+import React,{forwardRef} from "react";
 import FrontImg from "../images/Frontend..png";
 import DeployImg from "../images/Deploy.png";
 import VersionImg from "../images/version.png";
 import CertificateImg from "../images/certificate.png";
-function Skill() {
+const Skill = forwardRef((props, ref) => {
   return (
-    <div className="relative bottom-10 bg-amber-100 pb-16 ">
+    <div ref={ref} className="relative bottom-10 bg-amber-100 pb-16 ">
       <div className="mx-80">
         <h1 className="text-6xl text-center py-16">Skills</h1>
         <div className= "flex flex-col items-center bg-white  rounded-xl shadow-xl p-5">
@@ -29,6 +29,6 @@ function Skill() {
       </div>
     </div>
   );
-}
+})
 
 export default Skill;

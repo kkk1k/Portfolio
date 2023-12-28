@@ -1,8 +1,8 @@
-import React from "react";
+import React, {forwardRef} from "react";
 import homepage1 from "../images/홈페이지.jpg";
-function Project() {
+const Project = forwardRef((props, ref) => {
   return (
-    <div className="relative bottom-10 mx-80">
+    <div ref={ref} className="relative bottom-10 mx-80">
       <h1 className="text-6xl text-center pt-16 pb-10">Project</h1>
       <p className="text-3xl font-bold mb-1 text-center">LG Hellovision의 로그데이티 기반 vod 추천 서비스</p>
       <p className="mb-1 text-center text-gray-500">2023.10.20 ~ 12.29</p>
@@ -76,6 +76,6 @@ function Project() {
      
     
   );
-}
+})
 
 export default Project;
