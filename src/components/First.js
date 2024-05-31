@@ -1,16 +1,18 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import profileImg from "../images/한경.jpg";
 import bgImg from "../images/BG.gif";
-export default function First() { 
+export default function First() {
   return (
     <div
       className="relative bottom-10 bg-center bg-no-repeat bg-cover h-[70vh] "
       style={{ backgroundImage: `url(${bgImg})` }}
     >
-      <div
-        className="relative top-44 flex mx-80 my-10 justify-evenly items-center transition-all duration-500 ease-in-out"
-      >
-        <img src={profileImg} className="w-64 h-64 rounded-full" />
+      <div className="relative top-44 flex mx-80 my-10 justify-evenly items-center transition-all duration-500 ease-in-out">
+        <img
+          src={profileImg}
+          className="w-[20%] h-[20%] rounded-full"
+          alt="프로필 사진"
+        />
         <div className="item-center">
           <h1 className="mb-20 text-center text-6xl font-bold text-white ">
             김한경

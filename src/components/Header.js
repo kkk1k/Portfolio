@@ -24,13 +24,22 @@ function Header({ aboutRef, skillRef, projectRef }) {
       <div className="py-5 xl:mx-80 sm:mx-28 flex justify-between items-center">
         <p className="text-3xl">KHK's Portfolio</p>
         <div className="flex xl:gap-10 sm:gap-5">
-          <div className=" cursor-pointer" onClick={onMoveToAbout}>
+          <div
+            className=" cursor-pointer hover:text-blue-500"
+            onClick={onMoveToAbout}
+          >
             About me
           </div>
-          <div className=" cursor-pointer" onClick={onMoveToSkills}>
+          <div
+            className=" cursor-pointer hover:text-blue-500"
+            onClick={onMoveToSkills}
+          >
             Skills
           </div>
-          <div className=" cursor-pointer" onClick={onMoveToProjects}>
+          <div
+            className=" cursor-pointer hover:text-blue-500"
+            onClick={onMoveToProjects}
+          >
             Project
           </div>
         </div>

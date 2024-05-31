@@ -1,52 +1,62 @@
-import React, {forwardRef} from "react";
+import React, { forwardRef } from "react";
 import homepage1 from "../images/홈페이지.jpg";
 const Project = forwardRef((props, ref) => {
   return (
     <div ref={ref} className="relative bottom-10 mx-80">
       <h1 className="text-6xl text-center pt-16 pb-10">Project</h1>
-      <p className="text-3xl font-bold mb-1 text-center">LG Hellovision의 로그데이티 기반 vod 추천 서비스</p>
+      <p className="text-3xl font-bold mb-1 text-center">
+        LG Hellovision의 로그데이티 기반 vod 추천 서비스
+      </p>
       <p className="mb-1 text-center text-gray-500">2023.10.20 ~ 12.29</p>
-      <div className="flex gap-10 mb-5">
-        <img className="w-[40%]" src={homepage1} />
+      <div className="flex gap-10 mb-5 justify-between">
+        <img className="w-[40%]" src={homepage1} alt="프로젝트 1" />
         <div>
-        <div className="flex flex-col text-lg">
-        <div className="font-bold">✓ 주요기능</div>
-        <div >
-          로그인, 회원가입, 위시리스트, 마이페이지, 리뷰, 영화제목 초성 배우명
-          검색, 숏필름(숏츠형태 동영상 재생), VOD 카테고리별 인기순 랜덤순
-          이름순 정렬{" "}
+          <div className="flex flex-col text-lg">
+            <div className="font-bold">✓ 주요기능</div>
+            <div>
+              로그인, 회원가입, 위시리스트, 마이페이지, 리뷰, 영화제목 초성
+              배우명 검색, 숏필름(숏츠형태 동영상 재생), VOD 카테고리별 인기순
+              랜덤순 이름순 정렬{" "}
+            </div>
+          </div>
+
+          <div className="flex flex-col text-lg">
+            <div className="font-bold">✓ github</div>
+            <a
+              className="transition ease-in-out duration-300 hover:text-blue-500"
+              href="https://github.com/LGHV-team1/final-project"
+            >
+              https://github.com/LGHV-team1/final-project
+            </a>
+          </div>
+          <div className="flex flex-col text-lg">
+            <div className="font-bold">✓ url</div>
+            <a
+              className="transition ease-in-out duration-300 hover:text-blue-500"
+              href="https://www.hellorvdworld.com/"
+            >
+              https://www.hellorvdworld.com/
+            </a>
+          </div>
+          <div className="flex flex-col text-lg">
+            <div className="font-bold">✓ Frontend</div>
+            <div>React, tailwind css, Redux toolkit</div>
+          </div>
+          <div className="flex flex-col text-lg">
+            <div className="font-bold">✓ Backend</div>
+            <div>Django REST Framework</div>
+          </div>
+          <div className="flex flex-col text-lg">
+            <div className="font-bold">✓ Database</div>
+            <div>MongoDB, Mysql</div>
+          </div>
+          <div className="flex flex-col text-lg">
+            <div className="font-bold">✓ Deployment</div>
+            <div>ECS, S3, Cloudfront,RDS, Route53, Docker, Kafka</div>
+          </div>
         </div>
       </div>
-      
-      <div className="flex flex-col text-lg">
-        <div className="font-bold">✓ github</div>
-        <a className="transition ease-in-out duration-300 hover:text-blue-500" href="https://github.com/LGHV-team1/final-project" >https://github.com/LGHV-team1/final-project</a>
-      </div>
-      <div className="flex flex-col text-lg">
-        <div className="font-bold">✓ url</div>
-        <a className="transition ease-in-out duration-300 hover:text-blue-500" href="https://www.hellorvdworld.com/">https://www.hellorvdworld.com/</a>
-      </div>
-      <div className="flex flex-col text-lg">
-        <div className="font-bold">✓ Frontend</div>
-        <div >
-          React, tailwind css, Redux toolkit
-        </div>
-      </div>
-      <div className="flex flex-col text-lg">
-        <div className="font-bold">✓ Backend</div>
-        <div >Django REST Framework</div>
-      </div>
-      <div className="flex flex-col text-lg">
-        <div className="font-bold">✓ Database</div>
-        <div >MongoDB, Mysql</div>
-      </div>
-      <div className="flex flex-col text-lg">
-        <div className="font-bold">✓ Deployment</div>
-        <div >ECS, S3, RDS, Route53, Docker, Kafka</div>
-      </div>
-      </div>
-      </div>
-        <div className="flex flex-col">
+      <div className="flex flex-col">
         <p className="text-lg font-bold">✓ 소개</p>
         <p className="text-lg">
           로그 데이터를 사용하여 사용자에게 VOD를 추천해주는 웹사이트 입니다.
@@ -71,11 +81,9 @@ const Project = forwardRef((props, ref) => {
           <span className="text-orange-400">S3</span>에 담아서 CDN으로 구축하여
           활용하였습니다.
         </p>
-        </div>
       </div>
-     
-    
+    </div>
   );
-})
+});
 
 export default Project;
