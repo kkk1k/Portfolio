@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef } from "react";
 import {
   CiCalendar,
   CiUser,
@@ -7,9 +7,9 @@ import {
   CiPhone,
   CiMail,
 } from "react-icons/ci";
-import githublogo from "../images/Githublogo.png"
+import githublogo from "../images/Githublogo.png";
 
-const About = forwardRef((props, ref) =>  {
+const About = forwardRef((props, ref) => {
   const copyToClipboard = (text) => {
     navigator.clipboard
       .writeText(text)
@@ -21,7 +21,10 @@ const About = forwardRef((props, ref) =>  {
       });
   };
   return (
-    <div ref={ref} className="relative bottom-10 mx-80 flex flex-col justify-center h-100 mb-16 ">
+    <div
+      ref={ref}
+      className="relative bottom-10 mx-80 flex flex-col justify-center h-100 mb-16 "
+    >
       <h1 className="relative right-1 text-6xl text-center py-16 ">About Me</h1>
       <div className="flex justify-center">
         <div className="grid grid-cols-3 gap-y-[50px] gap-x-16">
@@ -29,7 +32,7 @@ const About = forwardRef((props, ref) =>  {
             <CiUser size="60" />
             <span>
               <p className="text-2xl font-bold">이름</p>
-              <p className="text-xl">김한경</p>
+              <p className="text-xl">김종윤</p>
             </span>
           </div>
           <div className="flex items-center gap-5">
@@ -54,34 +57,46 @@ const About = forwardRef((props, ref) =>  {
             </span>
           </div>
           <div className="flex items-center gap-5">
-          <CiPhone className="cursor-pointer transition ease-in-out duration-300 hover:scale-90" size="60" onClick={() => copyToClipboard('010-4878-5958')} />
+            <CiPhone
+              className="cursor-pointer transition ease-in-out duration-300 hover:scale-90"
+              size="60"
+              onClick={() => copyToClipboard("010-4878-5958")}
+            />
             <span>
               <p className="text-2xl font-bold">연락처</p>
               <p className="text-xl">010-4878-5958</p>
             </span>
           </div>
           <div className="flex items-center gap-5">
-          <CiMail size="60" className="cursor-pointer transition ease-in-out duration-300 hover:scale-90"  onClick={() => copyToClipboard('googija9818@gmail.com')} />
+            <CiMail
+              size="60"
+              className="cursor-pointer transition ease-in-out duration-300 hover:scale-90"
+              onClick={() => copyToClipboard("googija9818@gmail.com")}
+            />
             <span>
               <p className="text-2xl font-bold">이메일</p>
               <p className="text-xl">googija9818@gmail.com</p>
             </span>
           </div>
-          
-          
         </div>
-        
       </div>
-      <div className="flex justify-center items-center pt-10"><img src={githublogo} className="w-40" />
-      <span className="flex flex-col">
-       <p className="text-2xl font-bold"> Github 주소</p> 
-      <a href="https://github.com/kkk1k" className="text-3xl pt-2 transition ease-in-out duration-300 hover:text-blue-500">https://github.com/kkk1k</a>
-      </span>
-      
-            </div>
-      <h1 className="relative text-2xl text-center my-10 mx-64 p-5 bg-orange-200 rounded-md">연락처와 이메일 버튼을 누르면 복사됩니다.</h1>
+      <div className="flex justify-center items-center pt-10">
+        <img src={githublogo} className="w-40" />
+        <span className="flex flex-col">
+          <p className="text-2xl font-bold"> Github 주소</p>
+          <a
+            href="https://github.com/kkk1k"
+            className="text-3xl pt-2 transition ease-in-out duration-300 hover:text-blue-500"
+          >
+            https://github.com/kkk1k
+          </a>
+        </span>
+      </div>
+      <h1 className="relative text-2xl text-center my-10 mx-64 p-5 bg-orange-200 rounded-md">
+        연락처와 이메일 버튼을 누르면 복사됩니다.
+      </h1>
     </div>
   );
-})
+});
 
 export default About;
