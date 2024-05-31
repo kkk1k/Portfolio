@@ -21,7 +21,7 @@ export default function First() {
           <p className="text-center text-2xl text-white">
             안녕하세요
             <br />
-            소통하는 웹 개발자 김한경입니다
+            소통하는 웹 개발자 김종윤입니다
             <br />
             저의 장점은 커뮤니케이션 능력과 꼼꼼한 성격입니다.
           </p>
