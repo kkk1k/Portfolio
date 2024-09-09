@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.6b9b6919.css",
+    "main.js": "/Portfolio/static/js/main.ec99a41a.js",
+    "static/media/한경.jpg": "/Portfolio/static/media/한경.13cce22d3eda39a47c21.jpg",
+    "static/media/BG.gif": "/Portfolio/static/media/BG.7506153108c2d0d0f22d.gif",
+    "static/media/Frontend..png": "/Portfolio/static/media/Frontend..7f37e93d58ee9daec21f.png",
+    "static/media/홈페이지.jpg": "/Portfolio/static/media/홈페이지.2a0cc24a268e33a24382.jpg",
+    "static/media/Deploy.png": "/Portfolio/static/media/Deploy.88383582dbb4bb733793.png",
+    "static/media/version.png": "/Portfolio/static/media/version.05692d4854b5c886e876.png",
+    "static/media/project2.png": "/Portfolio/static/media/project2.0e1fb67588006f02f30b.png",
+    "static/media/certificate.png": "/Portfolio/static/media/certificate.bc9e9e0c25226d5abf9b.png",
+    "static/media/Githublogo.png": "/Portfolio/static/media/Githublogo.7c8f7736007664c4b0ba.png",
+    "index.html": "/Portfolio/index.html",
+    "main.6b9b6919.css.map": "/Portfolio/static/css/main.6b9b6919.css.map",
+    "main.ec99a41a.js.map": "/Portfolio/static/js/main.ec99a41a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b9b6919.css",
+    "static/js/main.ec99a41a.js"
+  ]
+}
