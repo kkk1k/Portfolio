@@ -32,7 +32,7 @@ const About = forwardRef((props, ref) => {
             <CiUser size="60" />
             <span>
               <p className="text-2xl font-bold">이름</p>
-              <p className="text-xl">김종윤</p>
+              <p className="text-xl">김한경</p>
             </span>
           </div>
           <div className="flex items-center gap-5">
